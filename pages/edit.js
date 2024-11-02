@@ -54,9 +54,8 @@ const Edit = () => {
   };
 
   const deleteProject = (id) => {
-    const copyProjects = data.projects;
-    copyProjects = copyProjects.filter((project) => project.id !== id);
-    setData({ ...data, projects: copyProjects });
+    const updatedProjects = data.projects.filter((project) => project.id !== id);
+    setData({ ...data, projects: updatedProjects });
   };
 
   // Services Handler
@@ -83,9 +82,8 @@ const Edit = () => {
   };
 
   const deleteService = (id) => {
-    const copyServices = data.services;
-    copyServices = copyServices.filter((service) => service.id !== id);
-    setData({ ...data, services: copyServices });
+    const updatedServices = data.services.filter((service) => service.id !== id);
+    setData({ ...data, services: updatedServices });
   };
 
   // Socials Handler
@@ -111,9 +109,8 @@ const Edit = () => {
   };
 
   const deleteSocials = (id) => {
-    const copySocials = data.socials;
-    copySocials = copySocials.filter((social) => social.id !== id);
-    setData({ ...data, socials: copySocials });
+    const updatedSocials = data.socials.filter((social) => social.id !== id);
+    setData({ ...data, socials: updatedSocials });
   };
 
   // Resume
